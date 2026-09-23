@@ -87,5 +87,49 @@ Python-Project/
 ├── Seniority.xls                              # Seniority/designation level data
 └── README.md
 ```
+## 💻 Sample Code
+
+```python
+import pandas as pd
+import numpy as np
+
+# Add bonus column: 5% of project cost for finished projects only
+master_df['Bonus'] = np.where(
+    master_df['Status'] == 'Finished',
+    master_df['Cost'] * 0.05,
+    0
+)
+
+# Demotion: reduce designation level for failed projects
+master_df.loc[master_df['Status'] == 'Failed', 'Designation'] -= 1
+
+# Promotion: increase designation level for employees aged over 29
+master_df.loc[master_df['Age'] > 29, 'Designation'] += 1
+
+# Per-manager total project cost
+manager_cost = master_df.groupby('Manager')['Cost'].sum().reset_index()
+manager_cost.columns = ['Manager', 'Total_Project_Cost']
+```
+## 🛠 Tools & Libraries Used
+
+| Tool | Purpose |
+|---|---|
+| Python 3.x | Core scripting language |
+| Pandas | DataFrames, merging, groupby, filtering |
+| NumPy | Conditional column logic (`np.where`) |
+| Jupyter Notebook | Annotated, interactive analysis environment |
+| XLS / CSV | Input and output file formats |
+
+---
+
+## 🎓 Skills Demonstrated
+
+- **Multi-Source ETL Pipeline Design** – Architected pipelines to ingest and unify data from multiple disparate HR sources.
+- **Data Cleaning** – Handled null values, corrected data types, and resolved duplicate records to ensure dataset integrity.
+- **Feature Engineering** – Derived custom performance metrics using conditional logic and business rules.
+- **Aggregation & Segmentation** – Computed per-group cost totals and applied segment-level filtering for targeted analysis.
+- **Documentation** – Wrote clear inline commentary suitable for handoff to non-technical stakeholders.
+
+---
 
     
