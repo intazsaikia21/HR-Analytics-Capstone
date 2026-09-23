@@ -24,6 +24,7 @@ My project on Analytics using Python in Jupyter Notebook
 | **City-based employee filter** | Segment of employees by geographic cluster for regional HR planning |
 
 ## 🔧 ETL Pipeline — Step by Step
+```
 Raw Data (3 .xls files)
 
         │
@@ -75,4 +76,5 @@ Raw Data (3 .xls files)
 | 8 | Promoted designation for employees aged 29+ | Conditional logic |
 | 9 | Computed total project cost per employee | `groupby().sum()` |
 | 10 | Filtered employees by city name containing 'o' | `str.contains()` |
+```
     
