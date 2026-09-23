@@ -76,5 +76,16 @@ Raw Data (3 .xls files)
 | 8 | Promoted designation for employees aged 29+ | Conditional logic |
 | 9 | Computed total project cost per employee | `groupby().sum()` |
 | 10 | Filtered employees by city name containing 'o' | `str.contains()` |
+
+## 📁 Repository Structure
+
 ```
+Python-Project/
+├── employee_project_data_analysis.ipynb   # Full annotated Jupyter Notebook
+├── employee.xls                           # Raw employee demographics data
+├── project.xls                            # Raw project assignments data
+├── seniority.xls                          # Seniority/designation level data
+└── README.md
+```
+
     
