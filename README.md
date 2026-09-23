@@ -25,11 +25,13 @@ My project on Analytics using Python in Jupyter Notebook
 
 ## 🔧 ETL Pipeline — Step by Step
 Raw Data (3 .xls files)
+
         │
         ▼
 [1] Load & Inspect
     • Read employee.xls, project.xls, seniority.xls into DataFrames
     • Check dtypes, null counts, shape
+
         │
         ▼
 [2] Clean & Transform
@@ -37,12 +39,14 @@ Raw Data (3 .xls files)
     • Split full Name into First_Name and Last_Name columns
     • Add title prefix (Mr./Mrs.) based on Gender → drop Gender column
     • Cast data types for consistency
+
         │
         ▼
 [3] Merge
     • LEFT JOIN: employees + projects on employee ID
     • LEFT JOIN: merged df + seniority on employee ID
     • Result: single master dataframe
+
         │
         ▼
 [4] Feature Engineering
@@ -50,13 +54,14 @@ Raw Data (3 .xls files)
     • Designation -= 1 WHERE Status = 'Failed' (demotion)
     • Designation += 1 WHERE Age > 29 (promotion)
     • Total_Project_Cost = SUM(Cost) GROUP BY Manager
+
         │
         ▼
 [5] Output
     • Final master dataframe exported to CSV
     • Jupyter Notebook with inline commentary for stakeholder review
-
-## 📋 Tasks Completed
+    
+## Tasks Completed
 
 | # | Task | Technique |
 |---|---|---|
