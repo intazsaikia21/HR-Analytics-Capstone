@@ -81,10 +81,10 @@ Raw Data (3 .xls files)
 
 ```
 Python-Project/
-├── employee_project_data_analysis.ipynb   # Full annotated Jupyter Notebook
-├── employee.xls                           # Raw employee demographics data
-├── project.xls                            # Raw project assignments data
-├── seniority.xls                          # Seniority/designation level data
+├── HR Employee Project data Analytics.ipynb   # Full annotated Jupyter Notebook
+├── Employee.xls                               # Raw employee demographics data
+├── Project.xls                                # Raw project assignments data
+├── Seniority.xls                              # Seniority/designation level data
 └── README.md
 ```
 
