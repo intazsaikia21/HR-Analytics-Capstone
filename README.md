@@ -61,7 +61,7 @@ Raw Data (3 .xls files)
 [5] Output
     • Final master dataframe exported to CSV
     • Jupyter Notebook with inline commentary for stakeholder review
-    
+```    
 ## Tasks Completed
 
 | # | Task | Technique |
